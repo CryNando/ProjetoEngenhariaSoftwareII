@@ -1,0 +1,12 @@
+c:\users\luis\documents\visual studio 2013\Projects\Calcula Area\Calcula Area\bin\Debug\Calcula Area.exe.config
+c:\users\luis\documents\visual studio 2013\Projects\Calcula Area\Calcula Area\bin\Debug\Calcula Area.exe
+c:\users\luis\documents\visual studio 2013\Projects\Calcula Area\Calcula Area\bin\Debug\Calcula Area.pdb
+c:\users\luis\documents\visual studio 2013\Projects\Calcula Area\Calcula Area\bin\Debug\Calcula Area.xml
+c:\users\luis\documents\visual studio 2013\Projects\Calcula Area\Calcula Area\obj\Debug\Calcula_Area.CalculoArea.resources
+c:\users\luis\documents\visual studio 2013\Projects\Calcula Area\Calcula Area\obj\Debug\Calcula_Area.ExibirTodosResultados.resources
+c:\users\luis\documents\visual studio 2013\Projects\Calcula Area\Calcula Area\obj\Debug\Calcula_Area.Form1.resources
+c:\users\luis\documents\visual studio 2013\Projects\Calcula Area\Calcula Area\obj\Debug\Calcula_Area.Resources.resources
+c:\users\luis\documents\visual studio 2013\Projects\Calcula Area\Calcula Area\obj\Debug\Calcula Area.vbproj.GenerateResource.Cache
+c:\users\luis\documents\visual studio 2013\Projects\Calcula Area\Calcula Area\obj\Debug\Calcula Area.exe
+c:\users\luis\documents\visual studio 2013\Projects\Calcula Area\Calcula Area\obj\Debug\Calcula Area.xml
+c:\users\luis\documents\visual studio 2013\Projects\Calcula Area\Calcula Area\obj\Debug\Calcula Area.pdb
