@@ -3,11 +3,13 @@
 Public Class ExibirTodosResultados
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        lb_Resultados.Items.Clear()
         Me.Hide()
         Form1.Show()
     End Sub
 
     Private Sub ExibirTodosResultados_Load(sender As Object, e As EventArgs) Handles MyBase.FormClosed
+        lb_Resultados.Items.Clear()
         Form1.Show()
 
     End Sub
@@ -20,11 +22,11 @@ Public Class ExibirTodosResultados
         Dim arquivo As New StreamReader("c:\CalculaArea\log.txt")
         Dim linhas As String = arquivo.ReadLine
 
-        While Not arquivo.EndOfStream
+        While linhas <> Nothing
             lb_Resultados.Items.Add(linhas & vbCrLf)
             linhas = arquivo.ReadLine
         End While
-
+        arquivo.Close()
 
     End Sub
 

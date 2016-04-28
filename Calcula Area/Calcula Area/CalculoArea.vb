@@ -10,6 +10,7 @@ Public Class CalculoArea
         If Not File.Exists("C:\CalculadoArea\log.txt") Then
             Using arquivo As StreamWriter = File.AppendText("C:\CalculaArea\log.txt")
                 arquivo.WriteLine("Resultado: " & resultado & " Figura: " & figura & " Medidas: " & medidas)
+                arquivo.Close()
             End Using
         End If
 
