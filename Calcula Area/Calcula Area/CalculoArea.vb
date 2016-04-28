@@ -1,4 +1,20 @@
-﻿Public Class CalculoArea
+﻿Imports System.IO
+
+Public Class CalculoArea
+
+    Public Sub gravarnoArquivo(ByVal resultado As Double, ByVal figura As String, ByVal medidas As String)
+        If Not (Directory.Exists("c:\CalculaArea")) Then
+            Directory.CreateDirectory("c:\CalculaArea")
+        End If
+
+        If Not File.Exists("C:\CalculadoArea\log.txt") Then
+            Using arquivo As StreamWriter = File.AppendText("C:\CalculaArea\log.txt")
+                arquivo.WriteLine("Resultado: " & resultado & " Figura: " & figura & " Medidas: " & medidas)
+            End Using
+        End If
+
+
+    End Sub
 
     Function calculaAreaTriangulo(ByVal base As Double, ByVal altura As Double) As Double
         Dim area As Double = (base * altura) / 2
@@ -30,31 +46,29 @@
                 MsgBox("Preencha os campos obrigatórios", MsgBoxStyle.Critical, "Calcula Área")
             Else
                 tb_resultado.Text = calculaAreaTriangulo(tb_base.Text, tb_altura.Text)
+                gravarnoArquivo(CDbl(tb_resultado.Text), "Triângulo", "Base = " & tb_base.Text & " Altura = " & tb_altura.Text)
             End If
         ElseIf (rb_retangulo.Checked) Then
             If (tb_ladohor.Text = "" Or tb_ladover.Text = "") Then
                 MsgBox("Preencha os campos obrigatórios", MsgBoxStyle.Critical, "Calcula Área")
             Else
                 tb_resultado.Text = calculaAreaRetangulo(tb_ladohor.Text, tb_ladover.Text)
+                gravarnoArquivo(CDbl(tb_resultado.Text), "Retângulo", "Lado Horizontal = " & tb_ladohor.Text & " Lado Vertical = " & tb_ladover.Text)
             End If
         ElseIf (rb_circulo.Checked) Then
             If (tb_raio.Text = "") Then
                 MsgBox("Preencha o campo Raio", MsgBoxStyle.Critical, "Calcula Área")
             ElseIf (tb_pi.Text = "") Then
-                MsgBox("O Campo de Pi está em branco, o será considerado o valor 3.14")
+                MsgBox("O Campo de Pi está em branco, o será considerado o valor 3,14")
                 tb_resultado.Text = calculaAreaCirculo(3.14, tb_raio.Text)
+                gravarnoArquivo(CDbl(tb_resultado.Text), "Círculo", "Pi = 3,14 Raio = " & tb_raio.Text)
             Else
                 tb_resultado.Text = calculaAreaCirculo(tb_pi.Text, tb_raio.Text)
+                gravarnoArquivo(CDbl(tb_resultado.Text), "Círculo", "Pi = 3,14 Raio = " & tb_raio.Text)
             End If
         Else
             MsgBox("Selecione alguma das opções", MsgBoxStyle.Critical, "Calcula Área")
-            End If
-    End Sub
-
-    Private Sub CalculoArea_Load_1(sender As Object, e As EventArgs) Handles MyBase.Load
-        rb_circulo.Checked = False
-        rb_retangulo.Checked = False
-        rb_Triangulo.Checked = False
+        End If
     End Sub
 
     Private Sub rb_triangulo_CheckedChanged(sender As Object, e As EventArgs) Handles rb_triangulo.CheckedChanged

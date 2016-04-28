@@ -22,39 +22,51 @@ Partial Class ExibirTodosResultados
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.lb_Resultados = New System.Windows.Forms.ListBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
-        '
-        'ListBox1
-        '
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Location = New System.Drawing.Point(12, 12)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(556, 264)
-        Me.ListBox1.TabIndex = 0
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(232, 287)
+        Me.Button3.Location = New System.Drawing.Point(185, 285)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(97, 23)
         Me.Button3.TabIndex = 15
         Me.Button3.Text = "Voltar ao Menu"
         Me.Button3.UseVisualStyleBackColor = True
         '
+        'lb_Resultados
+        '
+        Me.lb_Resultados.FormattingEnabled = True
+        Me.lb_Resultados.Location = New System.Drawing.Point(12, 12)
+        Me.lb_Resultados.Name = "lb_Resultados"
+        Me.lb_Resultados.Size = New System.Drawing.Size(556, 264)
+        Me.lb_Resultados.TabIndex = 0
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(288, 285)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(97, 23)
+        Me.Button1.TabIndex = 16
+        Me.Button1.Text = "Copiar"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'ExibirTodosResultados
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(580, 320)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.ListBox1)
+        Me.Controls.Add(Me.lb_Resultados)
         Me.Name = "ExibirTodosResultados"
         Me.Text = "Calcula Área"
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
     Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents lb_Resultados As System.Windows.Forms.ListBox
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class

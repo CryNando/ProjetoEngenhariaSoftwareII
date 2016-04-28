@@ -26,9 +26,9 @@ Partial Class Form1
         Me.Button2 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Button5 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -74,6 +74,15 @@ Partial Class Form1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Arquivo"
         '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(258, 19)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(115, 39)
+        Me.Button5.TabIndex = 2
+        Me.Button5.Text = "Documentação"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
         'Button3
         '
         Me.Button3.Location = New System.Drawing.Point(137, 19)
@@ -91,15 +100,6 @@ Partial Class Form1
         Me.Button4.TabIndex = 1
         Me.Button4.Text = "Sobre"
         Me.Button4.UseVisualStyleBackColor = True
-        '
-        'Button5
-        '
-        Me.Button5.Location = New System.Drawing.Point(258, 19)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(115, 39)
-        Me.Button5.TabIndex = 2
-        Me.Button5.Text = "Documentação"
-        Me.Button5.UseVisualStyleBackColor = True
         '
         'Form1
         '
