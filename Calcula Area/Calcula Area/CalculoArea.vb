@@ -3,18 +3,12 @@
 Public Class CalculoArea
 
     Public Sub gravarnoArquivo(ByVal resultado As Double, ByVal figura As String, ByVal medidas As String)
-        If Not (Directory.Exists("c:\CalculaArea")) Then
-            Directory.CreateDirectory("c:\CalculaArea")
-        End If
-
         If Not File.Exists("C:\CalculadoArea\log.txt") Then
             Using arquivo As StreamWriter = File.AppendText("C:\CalculaArea\log.txt")
                 arquivo.WriteLine("Resultado: " & resultado & " Figura: " & figura & " Medidas: " & medidas)
                 arquivo.Close()
             End Using
         End If
-
-
     End Sub
 
     Function calculaAreaTriangulo(ByVal base As Double, ByVal altura As Double) As Double

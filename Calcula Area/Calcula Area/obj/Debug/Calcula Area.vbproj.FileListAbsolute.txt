@@ -10,3 +10,4 @@ c:\users\luis\documents\visual studio 2013\Projects\Calcula Area\Calcula Area\ob
 c:\users\luis\documents\visual studio 2013\Projects\Calcula Area\Calcula Area\obj\Debug\Calcula Area.exe
 c:\users\luis\documents\visual studio 2013\Projects\Calcula Area\Calcula Area\obj\Debug\Calcula Area.xml
 c:\users\luis\documents\visual studio 2013\Projects\Calcula Area\Calcula Area\obj\Debug\Calcula Area.pdb
+C:\Users\Luis\documents\visual studio 2013\Projects\Calcula Area\Calcula Area\obj\Debug\Calcula Area.vbproj.ResolveComReference.cache
